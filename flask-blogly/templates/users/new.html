@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users New Form</title>
+</head>
+<body>
+    <h1>Create a user</h1>
+    <form method="POST">
+        <div class="form-row">
+            <label for="first_name" class="form-col">First Name</label>
+            <div class="col">
+                <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Enter a first name">
+            </div>           
+        </div>
+
+        <div class="form-row">
+            <label for="last_name" class="form-col">Last Name</label>
+            <div class="col">
+                <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Enter a last name">
+            </div>           
+        </div>
+
+        <div class="form-row">
+            <label for="image_url" class="form-col">Image URL</label>
+            <div class="col">
+                <input type="text" class="form-control" id="image_url" name="image_url" placeholder="Provide an image of this user">
+            </div>           
+        </div>
+        <div class="form-row">
+            <button type="submit" class="btn-submit">Add</button>
+        </div>
+    </form>
+</body>
+</html>
