@@ -6,9 +6,7 @@ db = SQLAlchemy()
 
 DEFAULT_IMAGE_URL = "https://www.kenyons.com/wp-content/uploads/2017/04/default-image-620x600.jpg"
 
-def connect_db(app):
-    db.app = app
-    db.init_app(app)
+
 
 class User(db.Model):
     """User."""
@@ -37,3 +35,6 @@ class User(db.Model):
 
 
 
+def connect_db(app):
+    db.app = app
+    db.init_app(app)
