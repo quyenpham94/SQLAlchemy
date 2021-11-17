@@ -4,7 +4,7 @@ from models import db, connect_db, User, Post
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql:///blogly"
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 app.config['SECRET_KEY'] = 'ihaveasecret'
 
 # Having the Debug Toolbar show redirects explicitly is often useful;
@@ -16,7 +16,6 @@ app.config['SECRET_KEY'] = 'ihaveasecret'
 
 connect_db(app)
 db.create_all()
-
 
 @app.route('/')
 def root():
