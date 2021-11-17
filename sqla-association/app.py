@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template, redirect, session, flash
 # from flask_debugtoolbar import DebugToolbarExtension
-from models import db, connect_db, Department, Employee, get_directory
+from models import db, connect_db, Department, Employee, get_directory, get_directory_join_class, get_directory_all_join, Project, EmployeeProject
 
 
 app = Flask(__name__)
